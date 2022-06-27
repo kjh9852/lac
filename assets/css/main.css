@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+@import url(../css/font.css);
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.main {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-bottom: 1px solid #fff;
+}
+.main_bg{
+    max-width: 1200px;
+    height: 930px;
+    margin: 0 auto;
+    background: url(../imgs/background.jpg) no-repeat top center;
+    background-size: contain;
+    opacity: 0.4;
+}
+.title_neon {
+    position: absolute;
+    top: 40px; left: 51%;
+    transform: translate(-50%, 0);
+    max-width: 1200px;
+    transition: .3s ease-in-out;
+    opacity: 1;
+}
+.title_neon img {
+    position: absolute;
+    top: 0; left: 50%;
+    transform: translate(-50%, 0);
+    width: 180px;
+    transition: .3s ease-in-out;
+    opacity: 1;
+}
+.mobile_title_neon  {
+    display: none;
+    position: absolute;
+    top: 40px; left: 51%;
+    transform: translate(-50%, 0);
+    max-width: 1200px;
+    transition: .3s ease-in-out;
+    opacity: 1;
+}
+.mobile_title_neon img {
+    position: absolute;
+    top: 0; left: 50%;
+    transform: translate(-50%, 0);
+    width: 180px;
+    transition: .3s ease-in-out;
+    opacity: 1;
+}
+.title_neon img:nth-child(1) {
+    opacity: 1;
+}
+.title_neon img:nth-child(2) {
+    opacity: 0;
+}
+.title_neon.on img:nth-child(1) {
+    opacity: 0;
+}
+.title_neon.on img:nth-child(2) {
+    opacity: 1;
+}
+.neon {
+    position: absolute;
+    top: 160px; left: 50%;
+    transform: translate(-50%, 0);
+    max-width: 1200px;
+    transition: .3s ease-in-out;
+    opacity: 1;
+}
+.neon img {
+    position: absolute;
+    top: 0; left: 50%;
+    transform: translate(-50%, 0);
+    width: 870px;
+    transition: .3s ease-in-out;
+    opacity: 1;
+}
+.neon img:nth-child(1) {
+    opacity: 1;
+}
+.neon img:nth-child(2) {
+    opacity: 0;
+}
+.neon.on img:nth-child(1) {
+    opacity: 0;
+}
+.neon.on img:nth-child(2) {
+    opacity: 1;
+}
+.mobile_neon {
+    display: none;
+    position: absolute;
+    top: 160px; left: 50%;
+    transform: translate(-50%, 0);
+    max-width: 1200px;
+    transition: .3s ease-in-out;
+    opacity: 1;
+}
+.mobile_neon img {
+    position: absolute;
+    top: 0; left: 50%;
+    transform: translate(-50%, 0);
+    width: 870px;
+    transition: .3s ease-in-out;
+    opacity: 1;
+}
+.door {
+    position: absolute;
+    top: 225px; left: 51%;
+    transform: translate(-50%, 0);
+    width: 500px;
+    opacity: 1;
+    transition: .3s ease-in-out;
+}
+.door.on {
+    top: 228px;
+    opacity: 0;
+}
+.door.on:hover {
+    opacity: 1;
+}
+.door a {
+    display: block;
+}
+.bottom_img{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    bottom: 0;
+    width: 1000px;
+}
+.monkey {
+    position: absolute;
+    bottom: -4px; left: 158px;
+    z-index: 1;
+}
+.monkey img {
+    width: 300px;
+}
+.desc {
+    position: absolute;
+    bottom: 55px; left: 500px;
+    color: #fff;
+    z-index: 2;
+}
+.desc p {
+    font-family: 'Jandamana-soild';
+    line-height: 3.2rem;
+    font-size: 2.5rem;
+}
+.smoke {
+    position: absolute;
+    bottom: 0;
+}

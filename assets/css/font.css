@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+@font-face {
+    src: url("../fonts/JANDAMANATEEBUBBLE.TTF");
+    font-family: "Jandamana";
+}
+@font-face {
+    src: url("../fonts/JANDAMANATEESOLID.TTF");
+    font-family: "Jandamana-soild";
+}
+@font-face {
+    src: url("../fonts/MALGUN.TTF");    
+    font-family: "MALGUN";
+}
+@font-face {
+    src: url("../fonts/MALGUNBD.TTF");   
+    font-weight: bold; 
+    font-family: "MALGUN";
+}
+@font-face {
+    src: url("../fonts/MALGUNSL.TTF");
+    font-weight: lighter;  
+    font-family: "MALGUN";
+}
+@font-face {
+    src: url("../fonts/KIdDOS-Regular.ttf");
+    font-weight: lighter;  
+    font-family: "KidDOS";
+}

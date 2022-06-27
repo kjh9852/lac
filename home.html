@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="LAC is a collection of 10,000 Lady Ape NFTs.
+        300 of these NFTs will be in an exclusive auction for whitelisted members.
+        100 of these NFTs will be airdropped to 100 BAYC holders who own the most expensive apes.
+        Holders can use their LAC NFTs either for investment or for trading purposes."
+    />
+    <title>LAC</title>
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.css" />
+    <!-- 스타일 시트 -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Oswald:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- 웹 폰트 -->
+
+    <link rel="shortcut icon" href="assets/icons/favicon.ico" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="assets/icons/favicon_72.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="96x96"
+      href="assets/icons/favicon_96.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="assets/icons/favicon_144.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="192x192"
+      href="assets/icons/favicon_192.png"
+    />
+    <!-- 파비콘 -->
+
+    <meta property="og:site_name" content="Lady Ape Yacht Club" />
+    <meta property="og:type" content="Lady Ape Yacht Club" />
+    <meta property="og:title" content="Lady Ape Yacht Club" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="https://ladyapeclub.com/" />
+    <meta
+      property="og:description"
+      content="A limited NFT collection where the token itself doubles as your membership to a swamp club for apes. The club is open! Ape in with us."
+    />
+    <!-- 페이스북 메타 태그 -->
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Lady Ape Yacht Club" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="https://ladyapeclub.com/" />
+    <meta
+      name="twitter:description"
+      content="A limited NFT collection where the token itself doubles as your membership to a swamp club for apes. The club is open! Ape in with us."
+    />
+    <!-- 트위터 메타 태그 -->
+  </head>
+
+  <body>
+    <audio
+      id="audio-source"
+      src="./assets/audio/Bgm.mp3"
+      type="audio/mp3"
+    ></audio>
+    <header>
+      <nav id="nav">
+        <div class="logo">
+          <a href="index.html">
+            <img src="assets/imgs/logo02.png" alt="logo" />
+          </a>
+        </div>
+        <div class="glo_nav">
+          <ul>
+            <li class="buy">
+              <a href="home.html">BUY A LADY APE</a>
+            </li>
+            <li class="team">
+              <a href="home.html">TEAM</a>
+            </li>
+            <li class="loadmap_btn">
+              <a href="home.html">ROADMAP</a>
+            </li>
+            <li>
+              <a href="gallery.html">GALLERY</a>
+            </li>
+            <li>
+              <a href="#">MEMBERS</a>
+            </li>
+            <li>
+              <button id="play" onclick="play()" class="bgm"></button>
+            </li>
+          </ul>
+        </div>
+        <div class="mobile_btn">
+          <a href="#">
+            <span></span>
+          </a>
+        </div>
+        <div class="mglo_nav">
+          <ul>
+            <li class="buy">
+              <a href="home.html">BUY A LADY APE</a>
+            </li>
+            <li class="team">
+              <a href="home.html">TEAM</a>
+            </li>
+            <li class="loadmap_btn">
+              <a href="home.html">ROADMAP</a>
+            </li>
+            <li>
+              <a href="gallery.html">GALLERY</a>
+            </li>
+            <li>
+              <a href="#">MEMBERS</a>
+            </li>
+          </ul>
+        </div>
+        <div class="social_nav">
+          <ul>
+            <li>
+              <a
+                href="https://twitter.com/ladyapeclub"
+                target="_black"
+                class="twitter"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://discord.gg/Ban6ZBy5V2"
+                target="_black"
+                class="discord"
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div id="container" class="ani bottom">
+      <section id="banner">
+        <div class="container">
+          <div class="wrapper">
+            <img src="assets/imgs/banner.jpg" alt="banner" />
+          </div>
+        </div>
+      </section>
+      <section id="nft">
+        <div class="wrapper">
+          <div class="buy_nft">
+            <div class="buy_bg">
+              <ul>
+                <li class="nft_monkey">
+                  <img src="assets/imgs/nft_monkey.png" alt="nft_monkey" />
+                  <h2>Find your Lady Ape</h2>
+                  <a href="https://www.strmnft.com" target="_black">
+                    <span>VIEW ON STRMNFT</span>
+                  </a>
+                </li>
+                <!-- <li class="metamask">
+                                <a href="#"></a>
+                                <img src="http://layc.cdn1.cafe24.com/img/metamask.png" alt="metamask">
+                            </li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="avatar">
+        <div class="wrapper">
+          <div class="avatar_section">
+            <div class="avatar_wrap">
+              <div class="left_box">
+                <ul>
+                  <li>
+                    <img src="assets/imgs/monkey02.png" alt="monkey" />
+                  </li>
+                  <li>
+                    <img src="assets/imgs/monkey07.png" alt="monkey" />
+                  </li>
+                  <li>
+                    <img src="assets/imgs/monkey05.png" alt="monkey" />
+                  </li>
+                  <li>
+                    <img src="assets/imgs/monkey03.png" alt="monkey" />
+                  </li>
+                  <li>
+                    <img src="assets/imgs/monkey06.png" alt="monkey" />
+                  </li>
+                  <li>
+                    <img src="assets/imgs/monkey09.png" alt="monkey" />
+                  </li>
+                  <li>
+                    <img src="assets/imgs/monkey08.png" alt="monkey" />
+                  </li>
+                  <li>
+                    <img src="assets/imgs/monkey04.png" alt="monkey" />
+                  </li>
+                  <li>
+                    <img src="assets/imgs/monkey01.png" alt="monkey" />
+                  </li>
+                </ul>
+              </div>
+              <div class="right_box">
+                <h2>
+                  LAC is more <br />
+                  than just an avatar
+                </h2>
+                <p>
+                  LAC is a collection of 10,000 Lady Ape NFTs. <br />
+                  300 of these NFTs will be in an exclusive auction <br />
+                  for whitelisted members. Meanwhile, 100 of these <br />
+                  NFTs will be airdopped to 100 Bored Ape Yacht Club (BAYC)
+                  <br />
+                  holders who own the most expensive apes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="team">
+        <div class="wrapper">
+          <div class="team_setcion">
+            <div class="team_row">
+              <div class="team_wrap">
+                <div class="title">
+                  <h2>THE TEAM</h2>
+                  <span
+                    >LAC was created by four friends who went beyond <br />
+                    their limits to design these cool apes. <br />
+                    We welcome you to the club.
+                  </span>
+                  <div class="team_list">
+                    <ul>
+                      <li>
+                        <span>Betty Boop</span>
+                        <p>The luxury brand fanatic</p>
+                      </li>
+                      <li>
+                        <span>Marge</span>
+                        <p>The cheeky fashionista</p>
+                      </li>
+                      <li>
+                        <span>Luann</span>
+                        <p>The caffeine addict</p>
+                      </li>
+                      <li>
+                        <span>Janey</span>
+                        <p>The classy sommelier</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="team_box">
+                  <div class="img_box">
+                    <ul>
+                      <li>
+                        <img src="assets/imgs/team01.png" alt="team01" />
+                      </li>
+                      <li>
+                        <img src="assets/imgs/team02.png" alt="team02" />
+                      </li>
+                      <li>
+                        <img src="assets/imgs/team04.png" alt="team04" />
+                      </li>
+                      <li>
+                        <img src="assets/imgs/team03.png" alt="team03" />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="boss_wrap">
+                <div class="boss_img">
+                  <img src="assets/imgs/main_monkey.png" alt="LAC BOSS" />
+                </div>
+                <div class="boss_txt">
+                  <h2>LAC BOSS</h2>
+                  <p>
+                    Chief executive and mastermind <br />
+                    of the Lady Ape Club
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="loadmap">
+        <div class="loadmap wrapper">
+          <div class="loadmap_wrap">
+            <div class="loadmap_logo">
+              <h2>
+                <img src="assets/imgs/loadmap_logo02.png" alt="loadmap" />
+              </h2>
+              <p>
+                We have detailed milestones set in place to show <br />
+                that we are here for the long run.
+              </p>
+            </div>
+            <div class="loadmap_list">
+              <div class="diamond">
+                <a href="#"></a>
+                <div class="item_infor">
+                  <div class="item_txt">
+                    <h2>Diamonds</h2>
+                    <p>
+                      LAC's unique utility token is the ‘Diamond’. <br />
+                      These have no real market <br />
+                      value outside of LAC. <br />
+                      Holders can earn ‘Diamonds’ through <br />
+                      missions and use them to purchase <br />
+                      items through the LAC Shop.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="dressroom">
+                <a href="#"></a>
+                <div class="item_infor">
+                  <div class="item_txt">
+                    <h2>LAC shop</h2>
+                    <p>
+                      A store with various content for LAC holders. <br />
+                      Holders can use Diamonds to purchase <br />
+                      items in the LAC Shop.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="map">
+                <a href="#"></a>
+                <div class="item_infor">
+                  <div class="item_txt">
+                    <ol>
+                      <h2>Social Community Mission</h2>
+                      <li>
+                        1. Accept Discord Invite and Follow Twitter
+                        <p>
+                          When you join the official Lady Ape Club (LAC) Discord
+                          channel and at the same time verify your <br />
+                          Twitter followers on Discord, you will receive 150
+                          Diamonds.
+                        </p>
+                      </li>
+                      <li>
+                        2. Celebrating the LAC Follower Achievement
+                        <p>
+                          If you retweet the post celebrating LAC's achievement
+                          of hitting 500/1000/1500 followers, <br />
+                          you will receive 50 Diamonds for every follower who
+                          congratulated you.
+                          <br />
+                          This does not apply to private accounts.
+                        </p>
+                      </li>
+                      <li>
+                        3. Celebrating the LAC NFT Holder Achievement
+                        <p>
+                          LAC's offcial Twitter account will post milestones
+                          such ad reaching 500/1000/1500 total <br />
+                          holders of LAC NFTs. If you retweet the official post
+                          and congratulate LAC for reaching the <br />
+                          said achievements. you will receive 100 Diamonds. This
+                          does not apply to private accounts
+                        </p>
+                      </li>
+                      <li>
+                        4. Special Missions
+                        <p>To be announced later on Twitter</p>
+                      </li>
+                    </ol>
+                    <ol>
+                      <h2>Recommended Missions</h2>
+                      <li>
+                        1. Refer a friend
+                        <p>
+                          If your friend becomes an LAC NFT holder after your
+                          Invitation <br />
+                          you can get 200 Diamonds, while your referral will
+                          receive 100 Diamonds.
+                          <br />
+                          Plus, if your referral is a Bored Ape Yacht Club
+                          (BAYC) NFT holder, <br />
+                          he or she can get an extra 50 Diamonds. (150 total)
+                        </p>
+                      </li>
+                    </ol>
+                    <ol>
+                      <h2>PFP Mission</h2>
+                      <li>
+                        1. PFP Certification
+                        <p>
+                          Change your Twitter profile to your LAC NFT and you
+                          will receive 200 Diamonds
+                        </p>
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              <div class="yoat">
+                <a href="#"></a>
+                <div class="item_infor">
+                  <div class="item_txt">
+                    <h2>Yacht Club</h2>
+                    <p>
+                      Actual real-life exclusive <br />
+                      Yacht Party to be held in Dubai. <br />
+                      Details of this exclusive event will <br />
+                      be updated at a later date.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="dress">
+                <a href="#"></a>
+                <div class="item_infor">
+                  <div class="item_txt">
+                    <h2>Powder Room</h2>
+                    <p>
+                      A dressing table that contains <br />
+                      mystery tickets. The price is <br />
+                      yet to be determined.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="key">
+                <a href="#"></a>
+                <div class="item_infor">
+                  <div class="item_txt">
+                    <h2>Key</h2>
+                    <p>
+                      The key is used to open the <br />
+                      Powder Room. The price is yet <br />
+                      to be determined.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="mystery">
+                <a href="#"></a>
+                <div class="item_infor">
+                  <div class="item_txt">
+                    <h2>Mystery Ticket</h2>
+                    <p>
+                      A Mystery Ticket allows holders <br />
+                      to participate in various upcoming <br />
+                      content. The tickets can be foundin <br />
+                      the Powder Room.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="box">
+                <a href="#"></a>
+                <div class="item_infor">
+                  <div class="item_txt">
+                    <h2>Jewelry Box</h2>
+                    <p>
+                      A Jewelry Box is required to <br />
+                      breed Baby Apes when used together <br />
+                      with DNA (similar to an incubator). <br />
+                      Each Jewelry Box is sold for <br />
+                      600 Diamond Tokens.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="babyapes">
+                <a href="#"></a>
+                <div class="item_infor">
+                  <div class="item_txt">
+                    <h2>Breeding Baby Apes</h2>
+                    <p>
+                      Baby Apes are divided into three tiers: <br />
+                      Silver, Gold, and Diamond. <br />
+                      Tier Grades are given randomly when <br />
+                      bred using ‘DNA’ and a ‘Jewelry Box’.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="monkeys">
+                <a href="#"></a>
+                <div class="item_infor">
+                  <div class="item_txt">
+                    <h2>BAYC Holder Event</h2>
+                    <p>
+                      100 people holding the most <br />
+                      expensive BAYCs will each receive <br />
+                      1 LAC for free. Holders will <br />
+                      be rewarded automatically <br />
+                      with Super DNA.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="dna">
+                <a href="#"></a>
+                <div class="item_infor">
+                  <div class="item_txt">
+                    <h2>DNA</h2>
+                    <p>
+                      A DNA is required to breed <br />
+                      Baby Apes when used together with <br />
+                      aJewelry Box. Each DNA is sold for <br />
+                      300 Diamond Tokens.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="sdna">
+                <a href="#"></a>
+                <div class="item_infor">
+                  <div class="item_txt">
+                    <h2>Super DNA</h2>
+                    <p>
+                      Super DNA has a higher chance to <br />
+                      breed high-tier Baby Apes and this is <br />
+                      only offered to BAYC holders. <br />
+                      Breeding can be done after <br />
+                      purchasing a Jewelry Box <br />
+                      required for breeding.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mobile loadmap_list">
+              <div class="diamond">
+                <a href="#"></a>
+                <div class="item_infor">
+                  <div class="item_txt">
+                    <h2>Diamonds</h2>
+                    <p>
+                      LAC's unique utility token is the ‘Diamond’. <br />
+                      These have no real market <br />
+                      value outside of LAC. <br />
+                      Holders can earn ‘Diamonds’ through <br />
+                      missions and use them to purchase <br />
+                      items through the LAC Shop.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="dressroom">
+                <a href="#"></a>
+                <div class="item_infor">
+                  <div class="item_txt">
+                    <h2>LAC shop</h2>
+                    <p>
+                      A store with various content for LAC holders. <br />
+                      Holders can use Diamonds to purchase items in the LAC Shop
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="map">
+                <a href="#"></a>
+                <div class="item_infor">
+                  <div class="item_txt">
+                    <ol>
+                      <h2>Social Community Mission</h2>
+                      <li>
+                        1. Accept Discord Invite and Follow Twitter
+                        <p>
+                          When you join the official Lady Ape Club (LAC) <br />
+                          Discord channel and at the same time verify your
+                          <br />
+                          Twitter followers on Discord, you will receive 150
+                          Diamonds.
+                        </p>
+                      </li>
+                      <li>
+                        2. Celebrating the LAC Follower Achievement
+                        <p>
+                          If you retweet the post celebrating LAC's achievement
+                          of hitting 500/1000/1500 followers, <br />
+                          you will receive 50 Diamonds for every follower who
+                          congratulated you.
+                          <br />
+                          This does not apply to private accounts.
+                        </p>
+                      </li>
+                      <li>
+                        3. Celebrating the LAC NFT Holder Achievement
+                        <p>
+                          LAC's offcial Twitter account will post milestones
+                          such ad reaching 500/1000/1500 total <br />
+                          holders of LAC NFTs. If you retweet the official post
+                          and congratulate LAC for reaching the <br />
+                          said achievements. you will receive 100 Diamonds. This
+                          does not apply to private accounts
+                        </p>
+                      </li>
+                      <li>
+                        4. Special Missions
+                        <p>To be announced later on Twitter</p>
+                      </li>
+                    </ol>
+                    <ol>
+                      <h2>Recommended Missions</h2>
+                      <li>
+                        1. Refer a friend
+                        <p>
+                          If your friend becomes an LAC NFT holder after your
+                          Invitation <br />
+                          you can get 200 Diamonds, while your referral will
+                          receive 100 Diamonds.
+                          <br />
+                          Plus, if your referral is a Bored Ape Yacht Club
+                          (BAYC) NFT holder, <br />
+                          he or she can get an extra 50 Diamonds. (150 total)
+                        </p>
+                      </li>
+                    </ol>
+                    <ol>
+                      <h2>PFP Mission</h2>
+                      <li>
+                        1. PFP Certification
+                        <p>
+                          Change your Twitter profile to your LAC NFT and you
+                          will receive 200 Diamonds
+                        </p>
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              <div class="yoat">
+                <a href="#"></a>
+                <div class="item_infor">
+                  <div class="item_txt">
+                    <h2>Yacht Club</h2>
+                    <p>
+                      Actual real-life exclusive <br />
+                      Yacht Party to be held in Dubai. <br />
+                      Details of this exclusive event will <br />
+                      be updated at a later date.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="dress">
+                <a href="#"></a>
+                <div class="item_infor">
+                  <div class="item_txt">
+                    <h2>Powder Room</h2>
+                    <p>
+                      A dressing table that contains <br />
+                      mystery tickets. The price is <br />
+                      yet to be determined.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="key">
+                <a href="#"></a>
+                <div class="item_infor">
+                  <div class="item_txt">
+                    <h2>Key</h2>
+                    <p>
+                      The key is used to open the <br />
+                      Powder Room. The price is yet <br />
+                      to be determined.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="mystery">
+                <a href="#"></a>
+                <div class="item_infor">
+                  <div class="item_txt">
+                    <h2>Mystery Ticket</h2>
+                    <p>
+                      A Mystery Ticket allows holders <br />
+                      to participate in various upcoming <br />
+                      content. The tickets can be foundin <br />
+                      the Powder Room.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="box">
+                <a href="#"></a>
+                <div class="item_infor">
+                  <div class="item_txt">
+                    <h2>Jewelry Box</h2>
+                    <p>
+                      A Jewelry Box is required to <br />
+                      breed Baby Apes when used together <br />
+                      with DNA (similar to an incubator). <br />
+                      Each Jewelry Box is sold for <br />
+                      600 Diamond Tokens.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="babyapes">
+                <a href="#"></a>
+                <div class="item_infor">
+                  <div class="item_txt">
+                    <h2>Breeding Baby Apes</h2>
+                    <p>
+                      Baby Apes are divided into three tiers: <br />
+                      Silver, Gold, and Diamond. <br />
+                      Tier Grades are given randomly when <br />
+                      bred using ‘DNA’ and a ‘Jewelry Box’.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="monkeys">
+                <a href="#"></a>
+                <div class="item_infor">
+                  <div class="item_txt">
+                    <h2>BAYC Holder Event</h2>
+                    <p>
+                      100 people holding the most <br />
+                      expensive BAYCs will each receive <br />
+                      1 LAC for free. Holders will <br />
+                      be rewarded automatically <br />
+                      with Super DNA.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="dna">
+                <a href="#"></a>
+                <div class="item_infor">
+                  <div class="item_txt">
+                    <h2>DNA</h2>
+                    <p>
+                      A DNA is required to breed <br />
+                      Baby Apes when used together with <br />
+                      aJewelry Box. Each DNA is sold for <br />
+                      300 Diamond Tokens.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="sdna">
+                <a href="#"></a>
+                <div class="item_infor">
+                  <div class="item_txt">
+                    <h2>Super DNA</h2>
+                    <p>
+                      Super DNA has a higher chance to <br />
+                      breed high-tier Baby Apes and this is <br />
+                      only offered to BAYC holders. <br />
+                      Breeding can be done after <br />
+                      purchasing a Jewelry Box <br />
+                      required for breeding.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="container">
+          <div class="footer_logo">
+            <img src="assets/imgs/footer_icon.png" alt="footer_logo" />
+          </div>
+          <div class="footer_social">
+            <ul>
+              <li>
+                <a
+                  href=" https://twitter.com/ladyapeclub"
+                  target="_black"
+                  class="twitter"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://discord.gg/Ban6ZBy5V2"
+                  target="_black"
+                  class="discord"
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="copyright">
+            <p>© TNC Art</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery_ui.js"></script> -->
+    <!-- JS -->
+    <script src="assets/js/main.js"></script>
+
+    <script>
+      var audio = document.getElementById("audio-source");
+      var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      var source = audioCtx.createMediaElementSource(audio);
+      var gainNode = audioCtx.createGain();
+
+      var gainConnected = source.connect(gainNode);
+      gainConnected.connect(audioCtx.destination);
+      const bgmBtn = document.querySelector(".bgm");
+
+      bgmBtn.addEventListener("click", () => {
+        bgmBtn.classList.toggle("on");
+      });
+      function play() {
+        if (audio.paused) {
+          audio.play();
+        } else {
+          audio.pause();
+        }
+      }
+    </script>
+  </body>
+</html>

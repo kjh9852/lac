@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LAC is a collection of 10,000 Lady Ape NFTs.
+        300 of these NFTs will be in an exclusive auction for whitelisted members.
+        100 of these NFTs will be airdropped to 100 BAYC holders who own the most expensive apes.
+        Holders can use their LAC NFTs either for investment or for trading purposes.">
+    <title>LAC</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <!-- 스타일 시트 -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- 웹 폰트 -->
+
+    <link rel="shortcut icon" href="assets/icons/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="assets/icons/favicon_72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="96x96" href="assets/icons/favicon_96.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/icons/favicon_144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="192x192" href="assets/icons/favicon_192.png" />
+    <!-- 파비콘 -->
+
+    <meta property="og:site_name" content="Lady Ape Yacht Club">
+    <meta property="og:type" content="Lady Ape Yacht Club">
+    <meta property="og:title" content="Lady Ape Yacht Club">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://ladyapeclub.com/">
+    <meta property="og:description"
+        content="A limited NFT collection where the token itself doubles as your membership to a swamp club for apes. The club is open! Ape in with us.">
+    <!-- 페이스북 메타 태그 -->
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Lady Ape Yacht Club">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:url" content="https://ladyapeclub.com/">
+    <meta name="twitter:description"
+        content="A limited NFT collection where the token itself doubles as your membership to a swamp club for apes. The club is open! Ape in with us.">
+    <!-- 트위터 메타 태그 -->
+
+    
+
+    <link rel="canonical" href="https://ladyapeclub.com/">
+</head>
+
+<body>
+    <audio id="audio-source" src="./assets/audio/Bgm.mp3" type="audio/mp3"></audio>
+    <header>
+        <nav id="nav">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/imgs/logo02.png" alt="logo">
+                </a>
+            </div>
+            <div class="glo_nav">
+                <ul>
+                    <li>
+                        <a href="home.html#nft">BUY A LADY APE</a>
+                    </li>
+                    <li>
+                        <a href="home.html#team">TEAM</a>
+                    </li>
+                    <li>
+                        <a href="home.html#loadmap">ROADMAP</a>
+                    </li>
+                    <li>
+                        <a href="gallery.html">GALLERY</a>
+                    </li>
+                    <li>
+                        <a href="#">MEMBERS</a>
+                    </li>
+                    <li>
+                        <button id="play" onclick="play()" class="bgm"></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="mobile_btn">
+                <a href="#">
+                    <span></span>
+                </a>
+            </div>
+            <div class="mglo_nav">
+                <ul>
+                    <li>
+                        <a href="home.html#nft">BUY A LADY APE</a>
+                    </li>
+                    <li>
+                        <a href="home.html#team">TEAM</a>
+                    </li>
+                    <li>
+                        <a href="home.html#loadmap">ROADMAP</a>
+                    </li>
+                    <li class="active">
+                        <a href="gallery.html">GALLERY</a>
+                    </li>
+                    <li>
+                        <a href="#">MEMBERS</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social_nav">
+                <ul>
+                    <li>
+                        <a href="https://twitter.com/ladyapeclub" target="_black" class="twitter"></a>
+                    </li>
+                    <li>
+                        <a href="https://discord.com/" target="_black" class="discord"></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container pb30 ">
+        <div class="wrap">
+            <div class="filter_title ani bottom">
+                <h2>GALLERY</h2>
+            </div>
+            <div class="filter_box ani bottom">
+                <div class="filter_bg">
+                    <div class="color_item">
+                        <ul>
+                            <li>
+                                <div class="special_item" data-filter="special">
+                                    <select data-filter="special" class="filter-special filter">
+                                        <option value="">SPECIAL</option>
+                                        <option value="Special">Special</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="bg_item" data-filter="color">
+                                    <select data-filter="background" class="filter-bg filter">
+                                        <option value="">BACKGROUND</option>
+                                        <option value="Orange">Orange</option>
+                                        <option value="Yellow">Yellow</option>
+                                        <option value="Gray">Gray</option>
+                                        <option value="Army Green">Army Green</option>
+                                        <option value="New Punk Blue">New Punk Blue</option>
+                                        <option value="Aquamarine">Aquamarine</option>
+                                        <option value="Purple">Purple</option>
+                                        <option value="Blue">Blue</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="clothes_item" data-filter="clothes">
+                                    <select data-filter="clothes" class="filter-clothes filter">
+                                        <option value="">CLOTHES</option>
+                                        <option value="Black Jacket">Black Jacket</option>
+                                        <option value="Bleted Tank Top">Bleted Tank Top</option>
+                                        <option value="Skull T-shirt">Skull T-shirt</option>
+                                        <option value="Stone Robe">Stone Robe</option>
+                                        <option value="Check Collar T-shirt">Check Collar T-shirt</option>
+                                        <option value="Jacquard Coat">Jacquard Coat</option>
+                                        <option value="Black Tank Top">Black Tank Top</option>
+                                        <option value="Geometric Pattern Blouse">Geometric Pattern Blouse</option>
+                                        <option value="Bustier Dress">Bustier Dress</option>
+                                        <option value="Stunt Jacket">Stunt Jacket</option>
+                                        <option value="Silver T-shirt">Silver T-shirt</option>
+                                        <option value="Rider Jacket">Rider Jacket</option>
+                                        <option value="Brown Chess Shirt">Brown Chess Shirt</option>
+                                        <option value="Admirals Coat">Admirals Coat</option>
+                                        <option value="Space Suit">Space Suit</option>
+                                        <option value="Unbalanced Ribbon Dress">Unbalanced Ribbon Dress</option>
+                                        <option value="Blue Tweed Jacket">Blue Tweed Jacket</option>
+                                        <option value="Noodle Strap Top">Noodle Strap Top</option>
+                                        <option value="Vietnam Shirt">Vietnam Shirt</option>
+                                        <option value="Vintage Neck Pole">Vintage Neck Pole</option>
+                                        <option value="Lac Black T-shirt">Lac Black T-shirt</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="earring" data-filter="earring">
+                                    <select data-filter="earring" class="filter-earring filter">
+                                        <option value="">EARRING</option>
+                                        <option value="Dot Earrings">Dot Earrings</option>
+                                        <option value="H Earrings">H Earrings</option>
+                                        <option value="Sapphire Earrings">Sapphire Earrings</option>
+                                        <option value="Aquamarine Earrings">Aquamarine Earrings</option>
+                                        <option value="Bone Earrings">Bone Earrings</option>
+                                        <option value="Emerald Earrings">Emerald Earrings</option>
+                                        <option value="Square Aquamarine Earrings">Square Aquamarine Earrings</option>
+                                        <option value="Flower Pearl Earrings">Flower Pearl Earrings</option>
+                                        <option value="Silver Three Earrings">Sliver Three Earrings</option>
+                                        <option value="Gold Logo Earrings">Gold Logo Earrings</option>
+                                        <option value="Ornament Scarf Earrings">Ornament Scarf Earrings</option>
+                                        <option value="Silver Feathering">Silver Feathering</option>
+                                        <option value="Gold Three Earrings">Gold Three Earrings</option>
+                                        <option value="Lucxury Earrings">Lucxury Earrings</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="necklace_item" data-filter="necklace_item">
+                                    <select data-filter="necklace" class="filter-necklace filter">
+                                        <option value="">NECKLACE</option>
+                                        <option value="Triple Gold Necklace">Triple Gold Necklace</option>
+                                        <option value="Medusa Pendant Necklace">Medusa Pendant Necklace</option>
+                                        <option value="Pearl Flower Necklace">Pearl Flower Necklace</option>
+                                        <option value="Divas Dream Necklace">Divas Dream Necklace</option>
+                                        <option value="Tricolor Pattern Choke">Tricolor Pattern Choke</option>
+                                        <option value="Bag Pendant Necklace">Bag Pendant Necklace</option>
+                                        <option value="Gold Pendant Necklace">Gold Pendant Necklace</option>
+                                        <option value="Leopard Scarf">Leopard Scarf</option>
+                                        <option value="Chandal Pendant">Chandal Pendant</option>
+                                        <option value="H Necklace">H Necklace</option>
+                                        <option value="Silver Tennis Necklace">Silver Tennis Necklace</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="face_item" data-filter="eyes">
+                                    <select data-filter="eyes" class="filter-eyes filter">
+                                        <option value="">EYES</option>
+                                        <option value="Laser">Laser</option>
+                                        <option value="Wink">Wink</option>
+                                        <option value="Sorry">Sorry</option>
+                                        <option value="Sad">Sad</option>
+                                        <option value="Bored">Bored</option>
+                                        <option value="Oops">Oops</option>
+                                        <option value="Coin">Coin</option>
+                                        <option value="X">X</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="face_item" data-filter="mouth">
+                                    <select data-filter="mouth" class="filter-mouth filter">
+                                        <option value="">MOUTH</option>
+                                        <option value="Boring">Boring</option>
+                                        <option value="Tongue">Tongue</option>
+                                        <option value="Suprised">Suprised</option>
+                                        <option value="Rage">Rage</option>
+                                        <option value="Emotion">Emotion</option>
+                                        <option value="Cigarette">Cigarette</option>
+                                        <option value="Pizza">Pizza</option>
+                                        <option value="Bubble Gum">Bubble Gum</option>
+                                        <option value="Wide Smile">Wide Smile</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="glasses_item" data-filter="glasses">
+                                    <select data-filter="glasses" class="filter-glasses filter">
+                                        <option value="">GLASSES</option>
+                                        <option value="Zigzag Point Sunglasses">Zigzag Point Sunglasses</option>
+                                        <option value="Red & Blue Sunglasses">Red & Blue Sunglasses</option>
+                                        <option value="Black Eyepatch">Black Eyepatch</option>
+                                        <option value="Turbid Glass">Turbid Glass</option>
+                                        <option value="Blackpink Eyepatch">Blackpink Eyepatch</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fur_item" data-filter="fur">
+                                    <select data-filter="fur" class="filter-fur filter">
+                                        <option value="">FUR</option>
+                                        <option value="Cheetah">Cheetah</option>
+                                        <option value="Zombie">Zombie</option>
+                                        <option value="Noise">Noise</option>
+                                        <option value="Solid Gold">Solid Gold</option>
+                                        <option value="Tan">Tan</option>
+                                        <option value="Pink">Pink</option>
+                                        <option value="Cream">Cream</option>
+                                        <option value="Brown">Brown</option>
+                                        <option value="Golden Brown">Golden Brown</option>
+                                        <option value="Black">Black</option>
+                                        <option value="Dark Brown">Dark Brown</option>
+                                        <option value="Blue">Blue</option>
+                                        <option value="Gray">Gray</option>
+                                        <option value="White">White</option>
+                                        <option value="Red">Red</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="hair_item" data-filter="head">
+                                    <select data-filter="head" data-filter02="head" class="filter-head filter">
+                                        <option value="">HEAD</option>
+                                        <option value="Brown Straight Hair">Brown Straight Hair</option>
+                                        <option value="Pink Straight Hair">Pink Straight Hair</option>
+                                        <option value="White Straight Hair">White Straight Hair</option>
+                                        <option value="Pink Ponytail">Pink Ponytail</option>
+                                        <option value="Gray Ponytail">Gray Ponytail</option>
+                                        <option value="Red Ponytail">Red Ponytail</option>
+                                        <option value="Fez Hat">Fez Hat</option>
+                                        <option value="Ribbon Hairpin">Ribbon Hairpin</option>
+                                        <option value="Chain Cap">Chain Cap</option>
+                                        <option value="Party Hat">Party Hat</option>
+                                        <option value="Brown Sun Cap">Brown Sun Cap</option>
+                                        <option value="Wedding Veil">Wedding Veil</option>
+                                        <option value="Blue Bandana">Blue Bandana</option>
+                                        <option value="Blackfur Snapback">Blackfur Snapback</option>
+                                        <option value="Silver Point Snapback">Sliver Point Snapback</option>
+                                        <option value="Working Headband">Working Headband</option>
+                                        <option value="Navy Tidy Hair">Navy Tidy Hair</option>
+                                        <option value="Brown Tidy Hair">Brown Tidy Hair</option>
+                                        <option value="Blonde Madonna Hair">Blonde Madonna Hair</option>
+                                        <option value="Pink Madonna Hair">Pink Madonna Hair</option>
+                                        <option value="Olivia Hair">Olivia Hair</option>
+                                        <option value="Bunny Headband">Bunny Headband</option>
+                                        <option value="Lac Snapback Black">Layc Snapback Black</option>
+                                        <option value="Horns">Horns</option>
+                                        <option value="Green Short Hair">Green Short Hair</option>
+                                        <option value="Army Hat">Armt Hat</option>
+                                        <option value="Halo">Halo</option>
+                                        <option value="White Helmet">White Helmet</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="search_item">
+                                    <form class="search_form">
+                                        <input class="form_control" type="number" value="" placeholder="BY ID"
+                                            style="font-weight:bold ;">
+                                    </form>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="reset_btn">
+                        <button type="button">RESET FILTERS</button>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery ani bottom d-03">
+                <div>
+                </div>
+                <!-- <div class="loader">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer_logo">
+                <img src="assets/imgs/footer_icon.png" alt="footer_logo">
+            </div>
+            <div class="footer_social">
+                <ul>
+                    <li>
+                        <a href="https://twitter.com/ladyapeclub" target="_black" class="twitter"></a>
+                    </li>
+                    <li>
+                        <a href="https://discord.gg/Ban6ZBy5V2" target="_black" class="discord"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>© TNC Art</p>
+            </div>
+        </div>
+        </div>
+
+        <!-- <script src="assets/js/jquery.js"></script>
+        <script src="assets/js/jquery_ui.js"></script> -->
+        <script src="assets/js/infinite-scroll-pkgd.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <!-- JS -->
+
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/gallery.js?ver=2.2"></script>
+        <script src="assets/js/main.js"></script>
+
+
+        <script>
+            var audio = document.getElementById("audio-source");
+            var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            var source = audioCtx.createMediaElementSource(audio);
+            var gainNode = audioCtx.createGain();
+
+            var gainConnected = source.connect(gainNode);
+            gainConnected.connect(audioCtx.destination);
+            const bgmBtn = document.querySelector('.bgm');
+
+            bgmBtn.addEventListener('click', () => {
+                bgmBtn.classList.toggle('on');
+            });
+            function play() {
+                if (audio.paused) {
+                    audio.play()
+                }
+                else {
+                    audio.pause()
+                }
+            }
+        </script>
+</body>
+
+</html>
