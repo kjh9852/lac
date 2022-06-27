@@ -55,7 +55,7 @@
     var section = document.querySelector('.gallery > div');
 
     fetch(
-        `https://ladyapeclub.com/meta.json`
+        `https://kjh9852.github.io/lac/meta.json`
     ).then(function (response) {
         return response.json();
     }).then(function (json) {
