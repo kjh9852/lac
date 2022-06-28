@@ -25,6 +25,9 @@
             </a>
             <p>LADY #${monkey.name}</p>`
             section.appendChild(monkeyElement);
+            if(monkey.attributes.Background){
+                monkeyElement.setAttribute('data-background',monkey.attributes.Background);
+            }
         });
     }
 
