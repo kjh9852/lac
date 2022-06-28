@@ -21,13 +21,87 @@
             monkeyElement.classList.add('item');
             monkeyElement.innerHTML = `
             <a href="${monkey.hash}">
-                <img src="${monkey.image}" alt="">
+                <img src="${monkey.image}" alt="item">
             </a>
             <p>LADY #${monkey.name}</p>`
             section.appendChild(monkeyElement);
             if(monkey.attributes.Background){
                 monkeyElement.setAttribute('data-background',monkey.attributes.Background);
             }
+        });
+
+        const options = { threhold: 0.1 }
+        const io = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    var image = entry.target;
+                    image.src = image.dataset.src;
+                    entry.target.classList.add('visible');
+                    io.unobserve(image);
+
+                } else {
+                    entry.target.classList.remove('visible');
+                }
+            })
+        }, options)
+
+        document.querySelectorAll('.item').forEach((item) => io.observe(item));
+
+        var filtersObject = {};
+
+        $('.filter').click(function(e){
+            $(this).parent().toggleClass('on');
+        });
+
+        
+        $(".filter").on("change", function (e) {
+
+            var filterName = $(this).data("filter");
+                filterVal = $(this).val();
+
+            console.log(filtersObject);
+
+            if (filterVal == "") {
+                delete filtersObject[filterName];
+            } else {
+                filtersObject[filterName] = filterVal;
+            }
+
+            var filters = "";
+
+            for (var key in filtersObject) {
+                if (filtersObject.hasOwnProperty(key)) {
+                    filters += "[data-" + key + "='" + filtersObject[key] + "']";
+                }
+            }
+
+            reset.addEventListener('click', () => {
+                if (!filters == "") {
+                    filtersObject = {};
+                    $(".item").show();
+                    $(".filter option").prop("selected", false);
+                }
+            });
+
+            if (filters == "") {
+                $(".item").show();
+            } else {
+                $(".item").hide();
+                $(".item").hide().filter(filters).show();
+            }
+        });
+
+        $(".form_control").on("input", function () {
+            var inputVal = parseInt($(".form_control").val());
+            $(".item").hide();
+            $(".item").each(function () {
+                var num = parseInt($(this).data("num"));
+                if (num === inputVal) {
+                    $(this).show();
+                } else if (isNaN(inputVal)) {
+                    $(".item").show();
+                }
+            });
         });
     }
 
@@ -136,106 +210,106 @@
 
 
 
-    //         const options = { threhold: 0.1 }
-    //         const io = new IntersectionObserver((entries, observer) => {
-    //             entries.forEach(entry => {
-    //                 if (entry.isIntersecting) {
-    //                     var image = entry.target;
-    //                     image.src = image.dataset.src;
-    //                     entry.target.classList.add('visible');
-    //                     io.unobserve(image);
+            // const options = { threhold: 0.1 }
+            // const io = new IntersectionObserver((entries, observer) => {
+            //     entries.forEach(entry => {
+            //         if (entry.isIntersecting) {
+            //             var image = entry.target;
+            //             image.src = image.dataset.src;
+            //             entry.target.classList.add('visible');
+            //             io.unobserve(image);
 
-    //                 } else {
-    //                     entry.target.classList.remove('visible');
-    //                 }
-    //             })
-    //         }, options)
+            //         } else {
+            //             entry.target.classList.remove('visible');
+            //         }
+            //     })
+            // }, options)
 
-    //         document.querySelectorAll('.item').forEach((item) => io.observe(item));
+            // document.querySelectorAll('.item').forEach((item) => io.observe(item));
 
-    //         var backgrounds = "",
-    //             faces = "",
-    //             furs = "",
-    //             cothess = "",
-    //             necklaces = "",
-    //             glassess = "",
-    //             heads = "",
-    //             earrings = "";
+            var backgrounds = "",
+                faces = "",
+                furs = "",
+                cothess = "",
+                necklaces = "",
+                glassess = "",
+                heads = "",
+                earrings = "";
 
-    //         // var background = meta[i].attributes[0].value;
-    //         // var face = meta[i].attributes[1].value;
-    //         // var fur = meta[i].attributes[2].value;
+            // var background = meta[i].attributes[0].value;
+            // var face = meta[i].attributes[1].value;
+            // var fur = meta[i].attributes[2].value;
 
-    //         // if (backgrounds.indexOf("<option value='" + background + "'>" + background + "</option>") == -1) {
-    //         //     backgrounds += "<option value='" + background + "'>" + background + "</option>";
-    //         // }
-    //         // if (faces.indexOf("<option value='" + face + "'>" + face + "</option>") == -1) {
-    //         //     faces += "<option value='" + face + "'>" + face + "</option>";
-    //         // }
-    //         // if (furs.indexOf("<option value='" + fur + "'>" + fur + "</option>") == -1) {
-    //         //     furs += "<option value='" + fur + "'>" + fur + "</option>";
-    //         // }
-    //         // $(".filter-bg").append(backgrounds);
-    //         // $(".filter-face").append(faces);
-    //         // $(".filter-fur").append(furs);
-    //     }
+            // if (backgrounds.indexOf("<option value='" + background + "'>" + background + "</option>") == -1) {
+            //     backgrounds += "<option value='" + background + "'>" + background + "</option>";
+            // }
+            // if (faces.indexOf("<option value='" + face + "'>" + face + "</option>") == -1) {
+            //     faces += "<option value='" + face + "'>" + face + "</option>";
+            // }
+            // if (furs.indexOf("<option value='" + fur + "'>" + fur + "</option>") == -1) {
+            //     furs += "<option value='" + fur + "'>" + fur + "</option>";
+            // }
+            // $(".filter-bg").append(backgrounds);
+            // $(".filter-face").append(faces);
+            // $(".filter-fur").append(furs);
+        // }
 
-    //     var filtersObject = {};
+        // var filtersObject = {};
 
-    //     $('.filter').click(function(e){
-    //         $(this).parent().toggleClass('on');
-    //     });
+        // $('.filter').click(function(e){
+        //     $(this).parent().toggleClass('on');
+        // });
 
         
-    //     $(".filter").on("change", function (e) {
+        // $(".filter").on("change", function (e) {
 
-    //         var filterName = $(this).data("filter");
-    //             filterVal = $(this).val();
+        //     var filterName = $(this).data("filter");
+        //         filterVal = $(this).val();
 
-    //         console.log(filtersObject);
+        //     console.log(filtersObject);
 
-    //         if (filterVal == "") {
-    //             delete filtersObject[filterName];
-    //         } else {
-    //             filtersObject[filterName] = filterVal;
-    //         }
+        //     if (filterVal == "") {
+        //         delete filtersObject[filterName];
+        //     } else {
+        //         filtersObject[filterName] = filterVal;
+        //     }
 
-    //         var filters = "";
+        //     var filters = "";
 
-    //         for (var key in filtersObject) {
-    //             if (filtersObject.hasOwnProperty(key)) {
-    //                 filters += "[data-" + key + "='" + filtersObject[key] + "']";
-    //             }
-    //         }
+        //     for (var key in filtersObject) {
+        //         if (filtersObject.hasOwnProperty(key)) {
+        //             filters += "[data-" + key + "='" + filtersObject[key] + "']";
+        //         }
+        //     }
 
-    //         reset.addEventListener('click', () => {
-    //             if (!filters == "") {
-    //                 filtersObject = {};
-    //                 $(".item").show();
-    //                 $(".filter option").prop("selected", false);
-    //             }
-    //         });
+        //     reset.addEventListener('click', () => {
+        //         if (!filters == "") {
+        //             filtersObject = {};
+        //             $(".item").show();
+        //             $(".filter option").prop("selected", false);
+        //         }
+        //     });
 
-    //         if (filters == "") {
-    //             $(".item").show();
-    //         } else {
-    //             $(".item").hide();
-    //             $(".item").hide().filter(filters).show();
-    //         }
-    //     });
+        //     if (filters == "") {
+        //         $(".item").show();
+        //     } else {
+        //         $(".item").hide();
+        //         $(".item").hide().filter(filters).show();
+        //     }
+        // });
 
-    //     $(".form_control").on("input", function () {
-    //         var inputVal = parseInt($(".form_control").val());
-    //         $(".item").hide();
-    //         $(".item").each(function () {
-    //             var num = parseInt($(this).data("num"));
-    //             if (num === inputVal) {
-    //                 $(this).show();
-    //             } else if (isNaN(inputVal)) {
-    //                 $(".item").show();
-    //             }
-    //         });
-    //     });
+        // $(".form_control").on("input", function () {
+        //     var inputVal = parseInt($(".form_control").val());
+        //     $(".item").hide();
+        //     $(".item").each(function () {
+        //         var num = parseInt($(this).data("num"));
+        //         if (num === inputVal) {
+        //             $(this).show();
+        //         } else if (isNaN(inputVal)) {
+        //             $(".item").show();
+        //         }
+        //     });
+        // });
     // }
 
 })();
