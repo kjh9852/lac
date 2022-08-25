@@ -21,7 +21,7 @@ var reachedBottom = false;
 var stopScroll = false;
 var isFilter = false;
 
-fetch(`https://ladyapeclub.com/meta.json`)
+fetch(`https://kjh9852.github.io/lac/meta.json`)
 	.then(function (response) {
 		return response.json();
 	})
